@@ -1,0 +1,27 @@
+@mixin flex-row-between {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.row3 {
+    @include flex-row-between;
+}
+
+@mixin sizes($width, $height) {
+    height: $height;
+    width: $width;
+}
+
+.nav-links ul li::after {
+    @include sizes(2px, 0px);
+}
+
+@mixin headerimg ($background-position, $background-size) {
+    background-position: center;
+    background-size: cover;
+}
+
+.header, .sub-header, .cta {
+    @include headerimg;
+}

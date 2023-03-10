@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/favicon-16x16.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/main.css"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+    <title>Orka | Juntos podemos salvar a las orcas </title>
+    <meta name="description" content="Organización sin fines de lucro dedicada a evitar que las orcas entren en peligro de extinción.">
+    <meta name="keywords" value="ONG en Argentina para la conservación de las orcas, rastreo de orcas, protección de crías de orcas, campañas contra Mundo Marino/Sea World">
+</head>
+<body>
+ <!--Header-->
+ <section class="sub-header">
+ <nav>
+    <a href="#" class="logo">Orka</a>
+        <div class="nav-links" id="navLinks">
+        <i class="bi bi-x" onclick="hideMenu()"></i>
+        <ul>
+            <li><a href="../index.html">HOME</a></li>
+            <li><a href="./orcas.html">ORCAS</a></li>
+            <li><a href="./encuentros.html">ENCUENTROS</a></li>
+            <li><a href="./faq.html">FAQ</a></li>
+            <li><a href="#">CONTACTO</a></li>
+        </ul>
+    </div>
+    <i class="bi bi-list" onclick="showMenu()"></i>
+ </nav>
+ <h1 class="bounce-in-top">Contacto</h1>
+ </section>
+ 
+ <section class="ubicacion">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.845996583313!2d-58.372466487624855!3d-34.608055580458284!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a3352cbe276f75%3A0xe16921ef0545f86d!2sCasa%20Rosada!5e0!3m2!1sen!2sar!4v1678124456624!5m2!1sen!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+ </section>
+
+ <section class="contact-us">
+    <div class="row">
+        <div class="contact-col">
+            <div>
+                <i class="bi bi-house"></i>
+                <span>
+                    <h5>Balcarce 50, C1064</h5>
+                    <p>Ciudad Autonoma de Buenos Aires, Argentina</p>
+                </span>
+            </div>
+
+            <div>
+                <i class="bi bi-telephone"></i>
+                <span>
+                    <h5>+54 9 1143443600</h5>
+                    <p>Lunes a viernes, de 8 AM a 5 PM</p>
+                </span>
+            </div>
+
+            <div>
+                <i class="bi bi-envelope-at"></i>
+                <span>
+                    <h5>orka@info.gmail.com</h5>
+                    <p>Envianos tu consulta por e-mail.</p>
+                </span>
+            </div>
+        </div>
+        <div class="contact-col">
+            <form action="#">
+                <input type="text" placeholder="Ingrese su nombre" required>
+                <input type="email" placeholder="Ingrese su e-mail" required>
+                <input type="text" placeholder="Ingrese el asunto" required>
+                <textarea rows="8" placeholder="Mensaje" required></textarea>
+                <button type="submit" class="conoce-btn red">Enviar</button>
+            </form>
+        </div>
+    </div>
+ </section>
+ <hr>
+
+ <!-- Footer -->
+ <section class="footer">
+    <h4>Orka</h4>
+       <p>Un compromiso con el océano.<br> Para más información sobre cómo ayudar a las orcas, visita <a href="https://www.orcaconservancy.org/" target="._blank">Orca Conservacy.</a></p>
+    <div class="icons">
+        <i class="bi bi-facebook"></i>
+        <i class="bi bi-instagram"></i>
+        <i class="bi bi-twitter"></i>
+        <i class="bi bi-youtube"></i>
+    </div>
+    <p class="copyright">Todos los derechos reservados. <br>&copy; 2023 Orka</p>
+ </section>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+<!--JS para el Menú-->
+<script>
+        var navLinks = document.getElementById("navLinks")
+
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right ="-200px";
+        }
+</script>
+</body>
+</html>
