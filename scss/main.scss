@@ -8,6 +8,12 @@
     font-family: 'Poppins', sans-serif;
 }
 
+html, body{
+    width: 100%;
+    position: relative;
+    overflow-x: hidden;
+}
+
 /*Header y Navbar*/
 .header {
     min-height: 100vh;
@@ -63,6 +69,7 @@ nav {
     font-size: 35px;
     color: $negro;
     cursor: pointer;
+    text-shadow: 2px 2px 4px $humo;
 }
 
 .text-box {
@@ -222,7 +229,7 @@ nav .bi {
 
 
 @media(max-width: 700px) {
-
+    
     
     .text-box h1 {
         font-size: 30px;
@@ -254,6 +261,7 @@ nav .bi {
 
     .nav-links ul {
         padding: 30px;
+        overflow-x: hidden;
     }
 }
 

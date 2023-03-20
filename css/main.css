@@ -6,6 +6,12 @@
   font-family: "Poppins", sans-serif;
 }
 
+html, body {
+  width: 100%;
+  position: relative;
+  overflow-x: hidden;
+}
+
 /*Header y Navbar*/
 .header {
   min-height: 100vh;
@@ -59,6 +65,7 @@ nav {
   font-size: 35px;
   color: black;
   cursor: pointer;
+  text-shadow: 2px 2px 4px whitesmoke;
 }
 
 .text-box {
@@ -236,6 +243,7 @@ nav .bi {
   }
   .nav-links ul {
     padding: 30px;
+    overflow-x: hidden;
   }
 }
 /* Sobre */
